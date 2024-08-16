@@ -3,9 +3,15 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-
     public Action doOnAttack;
     public Action<float> doOnJump;
+
+    // Thêm ph??ng th?c ?? ki?m tra nh?n chu?t
+    public bool IsAttackPressed()
+    {
+        return Input.GetMouseButtonDown(0);
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))

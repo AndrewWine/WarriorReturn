@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface IKnockBack
 {
-    void KnockBack(Transform enemyTransform, Transform targetTransform, float offset);
+    void KnockBack(Transform transform, Transform target, float force);
 }
